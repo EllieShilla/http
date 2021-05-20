@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpService} from '../httpService.service';
 import {ReadFromFile} from '../readFromFile.service';
 import { saveAs } from 'file-saver';
+// import { SomeClass } from '../textJsTs';
+// import  {FromFile} from 'd:/gitProject/http/src/app/text.js';
 
 @Component({
   selector: 'app-user-add',
@@ -16,6 +18,7 @@ export class UserAddComponent implements OnInit {
   sum: number=0;
   done: boolean = false;
   text:string="";
+  z:any;
   constructor(private httpService: HttpService,private http:ReadFromFile){}
 
   submit(){
@@ -28,7 +31,8 @@ export class UserAddComponent implements OnInit {
   
   ngOnInit(): void {
 
-    
+    const str = <string>require('d:/gitProject/http/src/app/text.js');
+
     // var FileSaver = require('file-saver');
 // var blob = new Blob(["Hello, world!"], {type: "text/plain;charset=utf-8"});
 // saveAs(blob, "/assets/text.txt");
@@ -36,11 +40,11 @@ export class UserAddComponent implements OnInit {
   
 //     this.http.getText().subscribe((data:any) => {this.text = data;
 //        });
-const fs = require('fs');
+// const fs = require('fs');
 
-
-    const data =  fs.readFileSync("/assets/text.txt");
-    console.log(data.toString());
+// const fs = (<any>window).require("fs");
+//     const data =  fs.readFileSync("/assets/text.txt");
+//     console.log(data.toString());
  
 }
 

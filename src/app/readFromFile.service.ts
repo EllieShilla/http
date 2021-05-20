@@ -27,4 +27,8 @@ export class ReadFromFile {
   getText(){
     return this.http.get(this.urlEncoded, {responseType: 'text'});
   }
+
+  setText(){
+
+  }
 }
