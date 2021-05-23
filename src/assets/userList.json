@@ -1,0 +1,14 @@
+{
+  "userList": [
+    {
+      "login": "log123",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "login": "qwerty12",
+      "password": "09876",
+      "id": 2
+    }
+  ]
+}
