@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { HttpService} from '../httpService.service';
 import {ReadFromFile} from '../readFromFile.service';
 import {User} from '../user';
-import { saveAs } from 'file-saver';
 import {HttpClient} from '@angular/common/http';
 
 // import { SomeClass } from '../textJsTs';
